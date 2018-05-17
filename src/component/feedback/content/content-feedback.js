@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Content from './service-feedback'
 import OwlCarousel from 'react-owl-carousel';
-// import '/owl.carousel/dist/assets/owl.carousel.css';
-// import '/owl.carousel/dist/assets/owl.theme.default.css';
 class content extends Component {
     state = {feedbacks:[],
         options: {

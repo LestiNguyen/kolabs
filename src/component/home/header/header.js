@@ -12,7 +12,6 @@ class Header extends Component {
     componentDidMount(){
         axios.get(window.location.origin+'/aside')
         .then(res => {
-			console.log(res.data)
 			this.setState({asides:res.data})
 		})
 	}
@@ -30,7 +29,6 @@ class Header extends Component {
 					<div className="mainMenu">
 						<ul className="menu">
 							{this.state.asides.map(aside =>
-								 
 								<Content 
 									click={this.pressItem.bind(this,aside.classes)}
 									key={aside.id}
